@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+.scrollToTop {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    right: 60px;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131233;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+.scrollToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scrollToTop img {
+    width: 30px;
+    transition: transform .3s ease;
+}
+
+.scrollToTop:hover img {
+    transform: scale(1.5);
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uno {
+    background: #709800;
+}
+
+.dos {
+    background: #006198;
+}
+
+.tres {
+    background: #6B5EFF;
+}
+
+.cuatro {
+    background: #932DC3;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
